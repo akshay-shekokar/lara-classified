@@ -1,0 +1,24 @@
+.ak-header {
+    height: 6rem;
+}
+
+.ak-navbar {
+  padding: 1.5rem 7.5rem;
+  border: 1px solid #e7e7e7;
+  border-bottom-color: #e8e8e8 !important;
+  background-color: #f8f9fa !important;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ak-main-logo {
+  width: auto;
+  height: 40px;
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+.ak-navbar-collapsible{
+    display: flex;
+}

@@ -1,0 +1,28 @@
+.ak-hm-search-container {
+  height: 450px;
+  min-height: 450px;
+  background-image: url(https://laraclassified.bedigit.com/storage/app/logo/thumb-816x460-header-5bc1e7840e2f8.jpeg?v=1);
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+}
+
+.ak-hm-search-field-area {
+  display: inline-block;
+  font-family: Open Sans Condensed, Helvetica Neue, sans-serif;
+}
+
+.ak-hm-search-header {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.ak-hm-search-subheader {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 18px;
+}
