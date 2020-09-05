@@ -4,6 +4,7 @@ import HomePageRegion from "./home-page-region/home-page-region";
 import HomePagePremiumAds from "./home-page-premium-ads/home-page-premium-ads";
 import HomePageBrowseCategory from "./home-page-browse-category/home-page-browse-category";
 import HomePageLatestAds from "./home-page-latest-ads/home-page-latest-ads";
+import HomePageInfoSection from "./home-page-info-section/home-page-info-section";
 
 export {
   HomePageHeader,
@@ -12,4 +13,5 @@ export {
   HomePagePremiumAds,
   HomePageBrowseCategory,
   HomePageLatestAds,
+  HomePageInfoSection
 };

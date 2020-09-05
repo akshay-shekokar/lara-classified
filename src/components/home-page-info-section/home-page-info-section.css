@@ -1,0 +1,28 @@
+.ak-hp-info-container {
+  margin: 2.5rem 7.5rem;
+  background-color: #fafafa;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  color: #999999;
+}
+
+.ak-hp-info-section {
+  width: 30%;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ak-hp-info-section .ui.statistic {
+  margin: 0;
+}
+
+.ak-hp-info-section .ui.statistic .label,
+.ak-hp-info-section .ui.statistic .value {
+  color: #999999;
+}
+
+.ak-hp-info-section .ui.statistic .value {
+  font-size: 3rem !important;
+}
