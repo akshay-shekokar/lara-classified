@@ -2,7 +2,8 @@ import React from "react";
 import {
   HomePageHeader,
   HomePageSearchContainer,
-  HomePageRegion
+  HomePageRegion,
+  HomePagePremiumAds
 } from "../../components/index";
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HomePageHeader />
       <HomePageSearchContainer />
       <HomePageRegion />
+      <HomePagePremiumAds />
     </React.Fragment>
   );
 };

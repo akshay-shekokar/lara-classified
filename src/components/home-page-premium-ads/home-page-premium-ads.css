@@ -1,0 +1,30 @@
+.ak-hp-premium-ads-container {
+  margin: 2.5rem 7.5rem;
+}
+
+.ak-hp-premium-ads-header-label {
+  font-weight: lighter;
+  color: #999;
+}
+
+.ak-hp-premium-ads-header-label > b {
+  color: black;
+}
+
+.ak-hp-premium-ads-header-actions {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  color: #369;
+  transition: 0.3s;
+}
+
+.ak-hp-premium-ads-header-actions:hover {
+  color: #fa7722;
+  font-weight: 700;
+}
+
+.ak-hp-premium-ads-cards .ui.cards {
+  flex-wrap: nowrap;
+}
