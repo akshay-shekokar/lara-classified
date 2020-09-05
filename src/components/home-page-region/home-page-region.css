@@ -1,0 +1,45 @@
+.ak-hp-region-container {
+  margin: 2.5rem 7.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e2e2e2;
+  background-color: #f8f9fa;
+}
+
+.ak-hp-region-list-map {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ak-hp-region-map {
+  height: 250px;
+  background-image: url(https://laraclassified.bedigit.com/storage/app/logo/thumb-816x460-header-5bc1e7840e2f8.jpeg?v=1);
+  background-size: cover;
+  width: 400px;
+}
+
+.ak-hp-region-list-ctrls {
+  text-align: center;
+}
+
+.ak-hp-region-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.ak-hp-region-name {
+  padding: 0.5rem 0 0 0.25rem;
+  width: 30%;
+}
+
+.ak-hp-region-name > a {
+  color: #4e575d;
+}
+
+.ak-hp-region-name > a:hover {
+  color: #345676;
+  cursor: pointer;
+  text-decoration: underline;
+}

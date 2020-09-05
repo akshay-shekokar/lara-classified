@@ -5,8 +5,8 @@
 .ak-navbar {
   padding: 1.5rem 7.5rem;
   border: 1px solid #e7e7e7;
-  border-bottom-color: #e8e8e8 !important;
-  background-color: #f8f9fa !important;
+  border-bottom-color: #e8e8e8;
+  background-color: #f8f9fa;
   height: 100%;
   display: flex;
   justify-content: space-between;
