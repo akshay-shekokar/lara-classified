@@ -7,6 +7,7 @@ import {
   HomePageBrowseCategory,
   HomePageLatestAds,
   HomePageInfoSection,
+  Footer
 } from "../../components/index";
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
       <HomePageBrowseCategory />
       <HomePageLatestAds />
       <HomePageInfoSection />
+      <Footer />
     </React.Fragment>
   );
 };

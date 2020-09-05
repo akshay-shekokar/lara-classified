@@ -10,7 +10,7 @@ const HomePageHeader = () => {
           <img
             src="https://laraclassified.bedigit.com/storage/app/default/logo.png?v=1"
             alt="laraclassified"
-            class="ak-main-logo"
+            className="ak-main-logo"
             title=""
             data-placement="bottom"
             data-toggle="tooltip"

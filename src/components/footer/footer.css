@@ -1,0 +1,30 @@
+.ak-footer {
+  padding: 2.5rem 7.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  background: #f5f5f5;
+}
+
+.ak-footer-copyrights {
+  text-align: center;
+  font-size: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.ak-footer-container {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.ak-footer-section {
+  width: 25%;
+}
+
+.ak-footer-section-header {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}

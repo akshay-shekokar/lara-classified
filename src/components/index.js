@@ -5,6 +5,7 @@ import HomePagePremiumAds from "./home-page-premium-ads/home-page-premium-ads";
 import HomePageBrowseCategory from "./home-page-browse-category/home-page-browse-category";
 import HomePageLatestAds from "./home-page-latest-ads/home-page-latest-ads";
 import HomePageInfoSection from "./home-page-info-section/home-page-info-section";
+import Footer from "./footer/footer";
 
 export {
   HomePageHeader,
@@ -13,5 +14,6 @@ export {
   HomePagePremiumAds,
   HomePageBrowseCategory,
   HomePageLatestAds,
-  HomePageInfoSection
+  HomePageInfoSection,
+  Footer
 };
