@@ -4,7 +4,8 @@ import {
   HomePageSearchContainer,
   HomePageRegion,
   HomePagePremiumAds,
-  HomePageBrowseCategory
+  HomePageBrowseCategory,
+  HomePageLatestAds
 } from "../../components/index";
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       <HomePageRegion />
       <HomePagePremiumAds />
       <HomePageBrowseCategory />
+      <HomePageLatestAds />
     </React.Fragment>
   );
 };

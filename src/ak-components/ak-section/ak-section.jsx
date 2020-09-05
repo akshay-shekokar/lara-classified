@@ -21,11 +21,18 @@ const StContents = styled.div`
   padding: 1rem 1.5rem;
 `;
 
-const AkSection = ({ header, contents }) => {
+const StFooter = styled.div`
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+`;
+
+const AkSection = ({ header, contents, footer }) => {
   return (
     <StContainer>
       <StHeader>{header}</StHeader>
       <StContents>{contents}</StContents>
+      {footer && <StFooter>{footer}</StFooter>}
     </StContainer>
   );
 };
@@ -33,6 +40,7 @@ const AkSection = ({ header, contents }) => {
 AkSection.propTypes = {
   header: PropTypes.node.isRequired,
   contents: PropTypes.node.isRequired,
+  footer: PropTypes.node,
 };
 
 export default AkSection;

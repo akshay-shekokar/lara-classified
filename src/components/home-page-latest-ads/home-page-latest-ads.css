@@ -1,0 +1,13 @@
+.ak-hp-latest-ads-duration {
+  color: #bbb;
+}
+
+.ak-hp-latest-ads-link {
+  color: #369;
+  transition: 0.5s;
+}
+
+.ak-hp-latest-ads-link:hover {
+  text-decoration: underline;
+  color: #fa7722;
+}
