@@ -1,0 +1,57 @@
+.ak-hp-browse-category-container {
+  margin: 2.5rem 7.5rem;
+}
+
+.ak-hp-browse-category-header-label {
+  font-weight: lighter;
+  color: #999;
+}
+
+.ak-hp-browse-category-header-label > b {
+  color: black;
+}
+
+.ak-hp-browse-category-header-actions {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  color: #369;
+  transition: 0.3s;
+}
+
+.ak-hp-browse-category-header-actions:hover {
+  color: #fa7722;
+  font-weight: 700;
+}
+
+.ak-hp-browse-category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ak-hp-category-card {
+  border: 1px solid #ddd;
+  padding: 3rem 0;
+  width: 200px;
+  text-align: center;
+  transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ak-hp-category-card:hover {
+  cursor: pointer;
+  padding: 2.9rem;
+}
+
+.ak-hp-category-card:hover > .ak-hp-category-card-icon {
+    opacity: 0.8;
+}
+
+.ak-hp-category-card:hover > .ak-hp-category-card-title {
+    font-weight: bold;
+    font-size: 1rem;
+}

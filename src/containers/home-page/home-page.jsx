@@ -3,7 +3,8 @@ import {
   HomePageHeader,
   HomePageSearchContainer,
   HomePageRegion,
-  HomePagePremiumAds
+  HomePagePremiumAds,
+  HomePageBrowseCategory
 } from "../../components/index";
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
       <HomePageSearchContainer />
       <HomePageRegion />
       <HomePagePremiumAds />
+      <HomePageBrowseCategory />
     </React.Fragment>
   );
 };
