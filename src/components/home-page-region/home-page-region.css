@@ -7,13 +7,14 @@
 .ak-hp-region-list-map {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .ak-hp-region-map {
   height: 250px;
   background-image: url(https://laraclassified.bedigit.com/storage/app/logo/thumb-816x460-header-5bc1e7840e2f8.jpeg?v=1);
   background-size: cover;
-  width: 400px;
+  width: 100%;
 }
 
 .ak-hp-region-list-ctrls {
@@ -30,7 +31,7 @@
 
 .ak-hp-region-name {
   padding: 0.5rem 0 0 0.25rem;
-  width: 30%;
+  width: 100%;
 }
 
 .ak-hp-region-name > a {
@@ -41,4 +42,19 @@
   color: #345676;
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 700px) {
+  .ak-hp-region-list-map {
+    flex-wrap: nowrap;
+  }
+  .ak-hp-region-map {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .ak-hp-region-name {
+    width: 33%;
+  }
 }
