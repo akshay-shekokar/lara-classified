@@ -21,5 +21,11 @@
 }
 
 .ak-navbar-collapsible{
+    display: none;
+}
+
+@media only screen and (min-width: 850px) {
+  .ak-navbar-collapsible{
     display: flex;
+  }
 }
