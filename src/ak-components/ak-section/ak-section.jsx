@@ -19,6 +19,7 @@ const StHeader = styled.div`
 
 const StContents = styled.div`
   padding: 1rem 1.5rem;
+  overflow: auto;
 `;
 
 const StFooter = styled.div`

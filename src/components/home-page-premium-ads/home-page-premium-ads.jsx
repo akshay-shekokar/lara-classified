@@ -34,7 +34,7 @@ const HomePagePremiumAds = () => {
                           maxRating={5}
                           disabled
                         />{" "}
-                        {reviews} review
+                        <div>{reviews} review</div>
                       </Card.Description>
                     </Card.Content>
                     <Card.Content extra>

@@ -31,7 +31,7 @@
 .ak-hp-category-card {
   border: 1px solid #ddd;
   padding: 3rem 0;
-  width: 200px;
+  width: 100%;
   text-align: center;
   transition: 0.7s;
   display: flex;
@@ -51,4 +51,29 @@
 .ak-hp-category-card:hover > .ak-hp-category-card-title {
     font-weight: bold;
     font-size: 1rem;
+}
+
+@media only screen and (min-width: 400px) {
+  .ak-hp-category-card {
+    width: 50%
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .ak-hp-category-card {
+    width: 33%
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .ak-hp-category-card {
+    width: 25%
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .ak-hp-category-card {
+    width: 20%
+  }
 }
