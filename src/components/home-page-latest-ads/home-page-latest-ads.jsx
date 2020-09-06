@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, Card, Image, Rating, Button } from "semantic-ui-react";
+import { Icon, Card, Image, Rating, Button, Responsive } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
 import "../home-page-premium-ads/home-page-premium-ads.css";
 import "./home-page-latest-ads.css";
@@ -12,7 +12,7 @@ const HomePageLatestAds = () => {
         header={
           <React.Fragment>
             <div className="ak-hp-premium-ads-header-label">
-              Premium <b>Ads</b>
+              Latest <b>Ads</b>
             </div>
             <div className="ak-hp-premium-ads-header-actions">
               View More <Icon name="list" />
@@ -21,7 +21,7 @@ const HomePageLatestAds = () => {
         }
         contents={
           <div className="ak-hp-latest-ads-cards">
-            <Card.Group itemsPerRow={5}>
+            <Card.Group>
               {latestAds.map(
                 ({
                   id,

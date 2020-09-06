@@ -11,3 +11,28 @@
   text-decoration: underline;
   color: #fa7722;
 }
+
+@media only screen and (min-width: 500px) {
+  .ak-hp-latest-ads-cards a.ui.card {
+    width: 45%
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .ak-hp-latest-ads-cards a.ui.card {
+    width: 30%
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .ak-hp-latest-ads-cards a.ui.card {
+    width: 18%
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .ak-hp-category-card {
+    width: 20%
+  }
+}
