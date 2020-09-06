@@ -11,7 +11,7 @@
   font-family: Open Sans Condensed, Helvetica Neue, sans-serif;
   display: table-cell;
   vertical-align: middle;
-  text-align: center
+  text-align: center;
 }
 
 .ak-hm-search-header {
@@ -30,7 +30,17 @@
 }
 
 .ak-hm-search-controls {
-  display: inline-block;
+  display: block;
   background-color: #2185d0;
-  padding: 0.5rem;;
+  padding: 0.5rem;
+}
+
+.ak-hm-search-controls .ui.button.ui.button {
+  margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .ak-hm-search-controls {
+    display: flex;
+  }
 }

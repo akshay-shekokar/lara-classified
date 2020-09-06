@@ -11,7 +11,7 @@ const StyledFindButton = styled(Button)`
 
 const StyledInput = styled(Input)`
   &&&& {
-      width: 25rem;
+    min-width: 40%;
     input {
       border-radius: 0;
       border: none;
@@ -24,24 +24,28 @@ const HomePageSearchContainer = () => {
     <div className="ak-hm-search-container">
       <div className="ak-hm-search-field-area">
         <h1 className="ak-hm-search-header">Sell and buy near you</h1>
-        <p className="ak-hm-search-subheader">Simple, fase and efficient</p>
-        <div className="ak-hm-search-controls">
-          <StyledInput
-            icon="file audio outline"
-            size="large"
-            iconPosition="left"
-            placeholder="What ?"
-          />
-          <StyledInput
-            icon="globe"
-            size="large"
-            iconPosition="left"
-            placeholder="Where ?"
-          />
-          <StyledFindButton color="blue">
-            <Icon name="search" />
-            Search
-          </StyledFindButton>
+        <p className="ak-hm-search-subheader">Simple, fast and efficient</p>
+        <div className="body-margin">
+          <div className="ak-hm-search-controls body-margin">
+            <StyledInput
+              icon="file audio outline"
+              size="large"
+              iconPosition="left"
+              placeholder="What ?"
+              fluid
+            />
+            <StyledInput
+              icon="globe"
+              size="large"
+              iconPosition="left"
+              placeholder="Where ?"
+              fluid
+            />
+            <StyledFindButton color="blue" fluid>
+              <Icon name="search" />
+              Search
+            </StyledFindButton>
+          </div>
         </div>
       </div>
     </div>
