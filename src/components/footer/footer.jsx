@@ -4,7 +4,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="ak-footer">
+    <div className="ak-footer body-padding">
       <div className="ak-footer-container">
         <div className="ak-footer-section">
           <div className="ak-footer-section-header">About Us</div>

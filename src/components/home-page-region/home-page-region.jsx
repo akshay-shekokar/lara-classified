@@ -5,7 +5,7 @@ import { city } from "../../dummy-data/city";
 
 const HomePageRegion = () => {
   return (
-    <div className="ak-hp-region-container">
+    <div className="ak-hp-region-container body-margin">
       <h3>
         <Icon name="globe" />
         Choose a city or region

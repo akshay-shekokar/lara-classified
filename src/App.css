@@ -2,6 +2,24 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+.body-margin {
+  margin: 2.5rem 1.5rem;
+}
+
+.body-padding {
+  padding: 2.5rem 1.5rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .body-margin {
+    margin: 2.5rem 7.5rem;
+  }
+
+  .body-padding {
+    padding: 2.5rem 7.5rem;
+  }
+}
+
 .App {
   text-align: center;
 }

@@ -6,7 +6,7 @@ import { premiumAds } from "../../dummy-data/premiumAds";
 
 const HomePagePremiumAds = () => {
   return (
-    <div className="ak-hp-premium-ads-container">
+    <div className="ak-hp-premium-ads-container body-margin">
       <AkSection
         header={
           <React.Fragment>

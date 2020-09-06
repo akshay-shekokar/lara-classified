@@ -5,7 +5,7 @@ import "./home-page-header.css";
 const HomePageHeader = () => {
   return (
     <div className="ak-header">
-      <nav className="ak-navbar">
+      <nav className="ak-navbar body-padding">
         <div className="ak-navbar-icon">
           <img
             src="https://laraclassified.bedigit.com/storage/app/default/logo.png?v=1"

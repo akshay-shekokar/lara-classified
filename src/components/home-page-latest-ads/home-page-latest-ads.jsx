@@ -7,7 +7,7 @@ import { latestAds } from "../../dummy-data/latestAds";
 
 const HomePageLatestAds = () => {
   return (
-    <div className="ak-hp-premium-ads-container">
+    <div className="ak-hp-premium-ads-container body-margin">
       <AkSection
         header={
           <React.Fragment>

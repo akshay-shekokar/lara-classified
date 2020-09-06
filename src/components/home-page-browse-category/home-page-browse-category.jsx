@@ -6,7 +6,7 @@ import { categories } from "../../dummy-data/categories";
 
 const HomePageBrowseCategory = () => {
   return (
-    <div className="ak-hp-browse-category-container">
+    <div className="ak-hp-browse-category-container body-margin">
       <AkSection
         header={
           <React.Fragment>

@@ -4,7 +4,7 @@ import "./home-page-info-section.css";
 
 const HomePageInfoSection = () => {
   return (
-    <div className="ak-hp-info-container">
+    <div className="ak-hp-info-container body-margin">
       <div className="ak-hp-info-section">
         <Icon name="file outline" size="huge" />
         <Statistic>
