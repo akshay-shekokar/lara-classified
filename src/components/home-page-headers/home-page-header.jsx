@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Icon, Button } from "semantic-ui-react";
+import { AkSidebar } from "../../ak-components";
+import { HeaderSlider } from "../index";
 import "./home-page-header.css";
 
 const HomePageHeader = () => {
+  const [slider, showSlider] = useState(false);
   return (
     <div className="ak-header">
       <nav className="ak-navbar body-padding">
@@ -16,6 +19,12 @@ const HomePageHeader = () => {
             data-toggle="tooltip"
             data-original-title="LaraClassified United States"
           />
+        </div>
+        <div className="ak-navbar-sidebar">
+          <Button icon onClick={() => showSlider(!slider)}>
+            <Icon name="list" />
+          </Button>
+          <AkSidebar contents={<HeaderSlider />} visible={slider} top="6rem" />
         </div>
         <div className="ak-navbar-collapsible">
           <Button size="large">

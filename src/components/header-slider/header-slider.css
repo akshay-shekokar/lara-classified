@@ -1,0 +1,13 @@
+.ak-header-slider-container {
+  padding: 1.5rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.ak-header-slider-ctrl {
+  padding: 0 1rem 1rem 0;
+  border-bottom: ipx solid #e2e2e2;
+}
+
+.ak-header-slider-ctrl:hover {
+    cursor: pointer;
+}

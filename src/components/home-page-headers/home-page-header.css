@@ -1,5 +1,9 @@
 .ak-header {
-    height: 6rem;
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 
 .ak-navbar {
@@ -20,12 +24,12 @@
   margin: 0 5px 5px 0;
 }
 
-.ak-navbar-collapsible{
-    display: none;
+.ak-navbar-collapsible {
+  display: none;
 }
 
 @media only screen and (min-width: 850px) {
-  .ak-navbar-collapsible{
+  .ak-navbar-collapsible {
     display: flex;
   }
 }
