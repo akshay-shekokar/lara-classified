@@ -1,0 +1,15 @@
+.ak-search-controls {
+  display: block;
+  background-color: #2185d0;
+  padding: 0.5rem;
+}
+
+.ak-search-controls .ui.button.ui.button {
+  margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .ak-search-controls {
+    display: flex;
+  }
+}
