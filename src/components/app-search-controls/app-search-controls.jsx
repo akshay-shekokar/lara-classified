@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Input, Button, Icon } from "semantic-ui-react";
 import styled from "styled-components";
 import "./app-search-controls.css";
@@ -20,6 +21,7 @@ const StyledInput = styled(Input)`
 `;
 
 const AppSearchControls = () => {
+  const history = useHistory();
   return (
     <div className="body-margin">
       <div className="ak-search-controls body-margin">
@@ -37,7 +39,11 @@ const AppSearchControls = () => {
           placeholder="Where ?"
           fluid
         />
-        <StyledFindButton color="blue" fluid>
+        <StyledFindButton
+          color="blue"
+          fluid
+          onClick={() => history.push("/search-results")}
+        >
           <Icon name="search" />
           Search
         </StyledFindButton>

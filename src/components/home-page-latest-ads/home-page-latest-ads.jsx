@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Icon,
-  Card,
-  Image,
-  Rating,
-  Button,
-  Responsive,
-} from "semantic-ui-react";
+import { Icon, Card, Image, Rating, Button } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
 import "../home-page-premium-ads/home-page-premium-ads.css";
 import "./home-page-latest-ads.css";

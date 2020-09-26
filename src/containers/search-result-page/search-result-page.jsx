@@ -1,23 +1,21 @@
 import React from "react";
-import {
-  HomePageSearchContainer,
-  HomePageRegion,
-  HomePagePremiumAds,
-  HomePageBrowseCategory,
-  HomePageLatestAds,
-  HomePageInfoSection,
-} from "../../components/index";
+import styled from "styled-components";
+import { Divider } from "semantic-ui-react";
+import { AppSearchControls, SearchResultTabs } from "../../components/index";
+
+const StContainer = styled.div`
+  margin-top: 7.5rem;
+`;
 
 const SearchResultPage = () => {
   return (
-    <React.Fragment>
-      {/* <HomePageSearchContainer />
-      <HomePageRegion />
-      <HomePagePremiumAds />
-      <HomePageBrowseCategory />
-      <HomePageLatestAds />
-      <HomePageInfoSection /> */}
-    </React.Fragment>
+    <StContainer>
+      <AppSearchControls />
+      <div className="body-margin">
+        <Divider />
+        <SearchResultTabs />
+      </div>
+    </StContainer>
   );
 };
 

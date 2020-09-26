@@ -8,6 +8,7 @@ import HomePageLatestAds from "./home-page-latest-ads/home-page-latest-ads";
 import HomePageInfoSection from "./home-page-info-section/home-page-info-section";
 import AppFooter from "./app-footer/app-footer";
 import HeaderSlider from "./header-slider/header-slider";
+import SearchResultTabs from "./search-result-tabs/search-result-tabs";
 
 export {
   AppHeader,
@@ -19,5 +20,6 @@ export {
   HomePageLatestAds,
   HomePageInfoSection,
   AppFooter,
-  HeaderSlider
+  HeaderSlider,
+  SearchResultTabs
 };
