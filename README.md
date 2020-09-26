@@ -1,3 +1,17 @@
+TODO List:
+1. Add Router
+2. Page Not found Navigation
+3. Results Page
+4. Filters
+5. Visit Item Page
+6. Login/Authentication
+7. DB Connection
+8. Redux
+9. Env file setup
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

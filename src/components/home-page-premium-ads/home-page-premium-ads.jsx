@@ -23,7 +23,7 @@ const HomePagePremiumAds = () => {
             <Card.Group>
               {premiumAds.map(
                 ({ id, imageUrl, title, reviews, rating, price }) => (
-                  <Card onClick={() => console.log("Premium Ads id:", id)}>
+                  <Card onClick={() => console.log("Premium Ads id:", id)} key={id}>
                     <Image src={imageUrl} wrapped ui={false} />
                     <Card.Content>
                       <Card.Header>{title}</Card.Header>

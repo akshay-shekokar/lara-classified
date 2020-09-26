@@ -21,7 +21,7 @@ const HomePageBrowseCategory = () => {
         contents={
           <div className="ak-hp-browse-category-cards">
             {categories.map(({ icon, name }) => (
-              <div className="ak-hp-category-card">
+              <div className="ak-hp-category-card" key={name}>
                 <div className="ak-hp-category-card-icon"><Icon name={icon} size="huge" color="blue" /></div>
                 <div className="ak-hp-category-card-title">{name}</div>
               </div>

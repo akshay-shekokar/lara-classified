@@ -14,7 +14,7 @@ const HomePageRegion = () => {
         <div className="ak-hp-region-list-ctrls">
           <div className="ak-hp-region-list">
             {city.slice(0, 14).map((c) => (
-              <div className="ak-hp-region-name">
+              <div className="ak-hp-region-name" key={c}>
                 <a>{c}</a>
               </div>
             ))}

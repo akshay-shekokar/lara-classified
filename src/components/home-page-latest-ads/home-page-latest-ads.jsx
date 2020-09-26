@@ -1,5 +1,12 @@
 import React from "react";
-import { Icon, Card, Image, Rating, Button, Responsive } from "semantic-ui-react";
+import {
+  Icon,
+  Card,
+  Image,
+  Rating,
+  Button,
+  Responsive,
+} from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
 import "../home-page-premium-ads/home-page-premium-ads.css";
 import "./home-page-latest-ads.css";
@@ -34,7 +41,10 @@ const HomePageLatestAds = () => {
                   category,
                   place,
                 }) => (
-                  <Card onClick={() => console.log("Latest Ads id:", id)}>
+                  <Card
+                    onClick={() => console.log("Latest Ads id:", id)}
+                    key={id}
+                  >
                     <Image src={imageUrl} wrapped ui={false} />
                     <Card.Content>
                       <Card.Header>{title}</Card.Header>
@@ -46,13 +56,15 @@ const HomePageLatestAds = () => {
                           </span>
                           <Icon name="file" />
                           {category.map((cat) => (
-                            <span className="ak-hp-latest-ads-link">
+                            <span className="ak-hp-latest-ads-link" key={cat}>
                               {cat}{" "}
                             </span>
                           ))}
                           <Icon name="globe" />
                           {place.map((p) => (
-                            <span className="ak-hp-latest-ads-link">{p} </span>
+                            <span className="ak-hp-latest-ads-link" key={p}>
+                              {p}{" "}
+                            </span>
                           ))}
                         </div>
                         <div>

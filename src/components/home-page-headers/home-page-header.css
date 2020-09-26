@@ -28,8 +28,16 @@
   display: none;
 }
 
+.ak-navbar-sidebar {
+  display: flex;
+}
+
+
 @media only screen and (min-width: 850px) {
   .ak-navbar-collapsible {
     display: flex;
+  }
+  .ak-navbar-sidebar {
+    display: none;
   }
 }

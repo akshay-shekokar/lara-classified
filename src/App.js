@@ -1,9 +1,9 @@
 import React from "react";
-import { HomePage } from "./containers/index";
+import Root from "./router/route-config";
 import "./App.css";
 
 function App() {
-  return <HomePage />;
+  return <Root />;
 }
 
 export default App;
