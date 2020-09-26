@@ -1,0 +1,33 @@
+.ak-ads-duration {
+    color: #bbb;
+  }
+  
+  .ak-ads-link {
+    color: #369;
+    transition: 0.5s;
+  }
+  
+  .ak-ads-link:hover {
+    text-decoration: underline;
+    color: #fa7722;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    .ak-ads-cards a.ui.card {
+      width: 45%
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .ak-ads-cards a.ui.card {
+      width: 30%
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .ak-ads-cards a.ui.card {
+      width: 18%
+    }
+  }
+  
+  

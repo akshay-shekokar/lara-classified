@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Icon, Menu, Segment, Dropdown } from "semantic-ui-react";
+import { AppAdsCard } from "../index";
 import { ADS_TYPE, SEARCH_TYPE, doNothing } from "../../constants";
+import { latestAds } from "../../dummy-data/latestAds";
 
 const SearhcResultTabs = () => {
   const [activeItem, setActiveItem] = useState(ADS_TYPE.ALL_ADS);
@@ -36,6 +38,7 @@ const SearhcResultTabs = () => {
             </Dropdown.Menu>
           </Dropdown>
         </Menu>
+        <AppAdsCard adList={latestAds} />
       </Segment>
     </div>
   );

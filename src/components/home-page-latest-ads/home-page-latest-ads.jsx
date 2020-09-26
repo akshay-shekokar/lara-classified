@@ -1,8 +1,8 @@
 import React from "react";
-import { Icon, Card, Image, Rating, Button } from "semantic-ui-react";
+import { Icon, Button } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
+import { AppAdsCard } from "../index";
 import "../home-page-premium-ads/home-page-premium-ads.css";
-import "./home-page-latest-ads.css";
 import { latestAds } from "../../dummy-data/latestAds";
 
 const HomePageLatestAds = () => {
@@ -20,68 +20,7 @@ const HomePageLatestAds = () => {
           </React.Fragment>
         }
         contents={
-          <div className="ak-hp-latest-ads-cards">
-            <Card.Group>
-              {latestAds.map(
-                ({
-                  id,
-                  imageUrl,
-                  title,
-                  reviews,
-                  rating,
-                  price,
-                  duration,
-                  category,
-                  place,
-                }) => (
-                  <Card
-                    onClick={() => console.log("Latest Ads id:", id)}
-                    key={id}
-                  >
-                    <Image src={imageUrl} wrapped ui={false} />
-                    <Card.Content>
-                      <Card.Header>{title}</Card.Header>
-                      <Card.Description>
-                        <div>
-                          <span className="ak-hp-latest-ads-duration">
-                            <Icon name="time" />
-                            {duration}
-                          </span>
-                          <Icon name="file" />
-                          {category.map((cat) => (
-                            <span className="ak-hp-latest-ads-link" key={cat}>
-                              {cat}{" "}
-                            </span>
-                          ))}
-                          <Icon name="globe" />
-                          {place.map((p) => (
-                            <span className="ak-hp-latest-ads-link" key={p}>
-                              {p}{" "}
-                            </span>
-                          ))}
-                        </div>
-                        <div>
-                          <Rating
-                            icon="star"
-                            defaultRating={rating}
-                            maxRating={5}
-                            disabled
-                          />{" "}
-                          {reviews} review
-                        </div>
-                      </Card.Description>
-                    </Card.Content>
-                    <Card.Content extra>
-                      <a>
-                        <Icon name="rupee sign" />
-                        {price}
-                      </a>
-                    </Card.Content>
-                  </Card>
-                )
-              )}
-            </Card.Group>
-          </div>
+          <AppAdsCard adList={latestAds}/>
         }
         footer={
           <Button>

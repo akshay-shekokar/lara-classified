@@ -9,6 +9,7 @@ import HomePageInfoSection from "./home-page-info-section/home-page-info-section
 import AppFooter from "./app-footer/app-footer";
 import HeaderSlider from "./header-slider/header-slider";
 import SearchResultTabs from "./search-result-tabs/search-result-tabs";
+import AppAdsCard from "./app-ads-card/app-ads-card";
 
 export {
   AppHeader,
@@ -21,5 +22,6 @@ export {
   HomePageInfoSection,
   AppFooter,
   HeaderSlider,
-  SearchResultTabs
+  SearchResultTabs,
+  AppAdsCard
 };
