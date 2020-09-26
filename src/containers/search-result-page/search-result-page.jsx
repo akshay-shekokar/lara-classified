@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Divider } from "semantic-ui-react";
-import { AppSearchControls, SearchResultTabs } from "../../components/index";
+import { AppSearchControls, SearchResultTabs, AddYourContent } from "../../components/index";
 
 const StContainer = styled.div`
   margin-top: 7.5rem;
@@ -14,6 +14,7 @@ const SearchResultPage = () => {
       <div className="body-margin">
         <Divider />
         <SearchResultTabs />
+        <AddYourContent />
       </div>
     </StContainer>
   );

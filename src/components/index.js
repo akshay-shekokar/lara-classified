@@ -10,6 +10,7 @@ import AppFooter from "./app-footer/app-footer";
 import HeaderSlider from "./header-slider/header-slider";
 import SearchResultTabs from "./search-result-tabs/search-result-tabs";
 import AppAdsCard from "./app-ads-card/app-ads-card";
+import AddYourContent from "./add-your-content/add-your-content";
 
 export {
   AppHeader,
@@ -23,5 +24,6 @@ export {
   AppFooter,
   HeaderSlider,
   SearchResultTabs,
-  AppAdsCard
+  AppAdsCard,
+  AddYourContent
 };
