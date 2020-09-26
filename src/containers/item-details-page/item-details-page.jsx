@@ -1,7 +1,13 @@
 import React from "react";
+import { ProductDetails, ProductOwnerDetails } from "../../components/index";
 
 const ItemDetailPage = () => {
-  return "Akshay";
+  return (
+    <>
+      <ProductDetails />
+      <ProductOwnerDetails />
+    </>
+  );
 };
 
 export default ItemDetailPage;

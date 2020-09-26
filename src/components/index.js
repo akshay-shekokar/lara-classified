@@ -11,6 +11,8 @@ import HeaderSlider from "./header-slider/header-slider";
 import SearchResultTabs from "./search-result-tabs/search-result-tabs";
 import AppAdsCard from "./app-ads-card/app-ads-card";
 import AddYourContent from "./add-your-content/add-your-content";
+import ProductDetails from "./product-details/product-details";
+import ProductOwnerDetails from "./product-owner-details/product-owner-details";
 
 export {
   AppHeader,
@@ -25,5 +27,7 @@ export {
   HeaderSlider,
   SearchResultTabs,
   AppAdsCard,
-  AddYourContent
+  AddYourContent,
+  ProductDetails,
+  ProductOwnerDetails
 };
