@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useHistory } from "react-router-dom";
 import { Icon, Card, Image, Rating } from "semantic-ui-react";
 import "./app-ads-card.css";
 
 const AppAdsCard = ({ adList }) => {
+  const history = useHistory();
   return (
     <div className="ak-ads-cards">
       <Card.Group>
@@ -19,7 +21,7 @@ const AppAdsCard = ({ adList }) => {
             category,
             place,
           }) => (
-            <Card onClick={() => console.log("Latest Ads id:", id)} key={id}>
+            <Card onClick={() => history.push(`/item-details/${id}`)} key={id}>
               <Image src={imageUrl} wrapped ui={false} />
               <Card.Content>
                 <Card.Header>{title}</Card.Header>
