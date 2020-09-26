@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Icon, Button } from "semantic-ui-react";
 import { AkSidebar } from "../../ak-components";
 import { HeaderSlider } from "../index";
-import "./home-page-header.css";
+import "./app-header.css";
 
-const HomePageHeader = () => {
+const AppHeader = () => {
   const [slider, showSlider] = useState(false);
   return (
     <div className="ak-header">
@@ -45,4 +45,4 @@ const HomePageHeader = () => {
   );
 };
 
-export default HomePageHeader;
+export default AppHeader;

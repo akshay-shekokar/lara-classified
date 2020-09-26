@@ -5,20 +5,20 @@ import {
   HomePagePremiumAds,
   HomePageBrowseCategory,
   HomePageLatestAds,
-  HomePageInfoSection
+  HomePageInfoSection,
 } from "../../components/index";
 
-const HomePage = () => {
+const SearchResultPage = () => {
   return (
     <React.Fragment>
-      <HomePageSearchContainer />
+      {/* <HomePageSearchContainer />
       <HomePageRegion />
       <HomePagePremiumAds />
       <HomePageBrowseCategory />
       <HomePageLatestAds />
-      <HomePageInfoSection />
+      <HomePageInfoSection /> */}
     </React.Fragment>
   );
 };
 
-export default HomePage;
+export default SearchResultPage;

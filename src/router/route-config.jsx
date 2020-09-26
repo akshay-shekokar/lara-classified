@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import { HomePage } from "../containers/index";
+import { HomePage, SearchResultPage } from "../containers/index";
 
 const Root = () => {
   return (
@@ -13,6 +13,9 @@ const Root = () => {
       <Switch>
         <Route path="/home">
           <HomePage />
+        </Route>
+        <Route path="/search-results">
+          <SearchResultPage />
         </Route>
         <Route path="*">
           <Redirect to="/home" />

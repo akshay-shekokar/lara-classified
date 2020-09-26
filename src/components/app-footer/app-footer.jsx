@@ -1,8 +1,8 @@
 import React from "react";
 import { List, Button } from "semantic-ui-react";
-import "./footer.css";
+import "./app-footer.css";
 
-const Footer = () => {
+const AppFooter = () => {
   return (
     <div className="ak-footer body-padding">
       <div className="ak-footer-container">
@@ -45,4 +45,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default AppFooter;
