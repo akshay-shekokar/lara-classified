@@ -1,3 +1,8 @@
 .ak-input-fields {
-    padding: 0.75rem 0;
+  padding: 0.75rem 0;
+}
+
+.ak-input-fields-info-text {
+  color: #6c757d;
+  font-size: 0.75rem;
 }

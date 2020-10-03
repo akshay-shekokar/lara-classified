@@ -6,7 +6,7 @@ const SelectInputCategory = () => {
   const [category, setCategory] = useState();
   return (
     <div className="ak-select-input-category">
-      {!category ? (
+      {category ? (
         <>
           Category - Some Sub Cat [
           <AkLink color="#369" hover="#fa7722" visited="#fa7722">
