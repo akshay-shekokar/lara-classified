@@ -6,8 +6,9 @@ const StContainer = styled.div`
   position: fixed;
   z-index: 9999;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
-  transition: opacity 0.6s ease-in-out;
-  ${({ position, top, left, width, height, visible }) =>
+  visibility: ${({ visible }) => (visible ? "visible" : "hidden")};
+  transition: visibility 0.6s, opacity 0.6s ease-in-out;
+  ${({ position, top, left, width, height }) =>
     position === "top" &&
     css`
       top: ${top};

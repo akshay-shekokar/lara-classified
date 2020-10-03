@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
 import { Icon, Card, Image, Rating } from "semantic-ui-react";
 import "./app-ads-card.css";
+import { ProductRowInfo } from "../index";
 
 const AppAdsCard = ({ adList }) => {
   const history = useHistory();
@@ -26,24 +27,11 @@ const AppAdsCard = ({ adList }) => {
               <Card.Content>
                 <Card.Header>{title}</Card.Header>
                 <Card.Description>
-                  <div>
-                    <span className="ak-ads-duration">
-                      <Icon name="time" />
-                      {duration}
-                    </span>
-                    <Icon name="file" />
-                    {category.map((cat) => (
-                      <span className="ak-ads-link" key={cat}>
-                        {cat}{" "}
-                      </span>
-                    ))}
-                    <Icon name="globe" />
-                    {place.map((p) => (
-                      <span className="ak-ads-link" key={p}>
-                        {p}{" "}
-                      </span>
-                    ))}
-                  </div>
+                  <ProductRowInfo
+                    duration={duration}
+                    category={category}
+                    place={place}
+                  />
                   <div>
                     <Rating
                       icon="star"

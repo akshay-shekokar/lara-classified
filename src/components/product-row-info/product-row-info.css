@@ -1,0 +1,14 @@
+.ak-ads-duration {
+  color: #bbb;
+}
+
+.ak-ads-link {
+  color: #369;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.ak-ads-link:hover {
+  text-decoration: underline;
+  color: #fa7722;
+}

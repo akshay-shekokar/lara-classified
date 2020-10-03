@@ -13,6 +13,7 @@ import AppAdsCard from "./app-ads-card/app-ads-card";
 import AddYourContent from "./add-your-content/add-your-content";
 import ProductDetails from "./product-details/product-details";
 import ProductOwnerDetails from "./product-owner-details/product-owner-details";
+import ProductRowInfo from "./product-row-info/product-row-info";
 
 export {
   AppHeader,
@@ -29,5 +30,6 @@ export {
   AppAdsCard,
   AddYourContent,
   ProductDetails,
-  ProductOwnerDetails
+  ProductOwnerDetails,
+  ProductRowInfo,
 };
