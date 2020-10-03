@@ -1,37 +1,42 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Divider, Label, Icon } from "semantic-ui-react";
-import { AkLink } from "../../ak-components/index";
-import { ProductRowInfo } from "../index";
+import { Icon, Popup } from "semantic-ui-react";
+import { AkLink } from "../../ak-components";
 import "./product-details.css";
 
-const ProductDetails = ({ productName }) => {
+const ProductDetails = ({ description }) => {
   return (
-    <div className="ak-pd-container">
-      <div className="ak-pd-header">
-        <AkLink color="#369" hover="#fa7722" onClick={() => alert("asd")}>
-          {"Product Name"}
+    <div>
+      <div className="ak-pd-description-text">{description}</div>
+      <div className="ak-pd-details-line-action">
+        <AkLink color="#369" hover="#fa7722">
+          <Popup
+            content="Send a message"
+            trigger={<Icon name="mail" size="big" />}
+            size="mini"
+          />
         </AkLink>
-        <Label color="grey" className="ak-pd-header-type">
-          {"Individual"}
-        </Label>
+        <AkLink color="#369" hover="#fa7722">
+          <Popup
+            content="Save Ad"
+            trigger={<Icon name="heart outline" size="big" />}
+            size="mini"
+          />
+        </AkLink>
+        <AkLink color="#369" hover="#fa7722">
+          <Popup
+            content="Report Abuse"
+            trigger={<Icon name="info circle" size="big" />}
+            size="mini"
+          />
+        </AkLink>
       </div>
-      <Divider />
-      <div className="ak-pd-info-row">
-        <ProductRowInfo
-          duration="2 years ago"
-          category={["cat 1"]}
-          place={["place"]}
-        />
-      </div>
-      <div>Image Carousel will be here</div>
-      
     </div>
   );
 };
 
 ProductDetails.propTypes = {
-  productName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default ProductDetails;

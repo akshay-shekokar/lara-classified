@@ -1,0 +1,31 @@
+.ak-pd-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-top: 7.5rem;
+}
+
+.ak-pd-header a {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ak-pd-header .ui.label {
+  padding: 0.35rem;
+  margin-left: 0.35rem;
+}
+
+.ak-pd-info-row,
+.ak-pd-info-row .ak-ads-link {
+  color: #bbb;
+}
+
+.ak-pd-info-row span {
+  padding-right: 1rem;
+}
+
+.ak-pd-container .ak-pd-send-message-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}

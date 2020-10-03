@@ -1,10 +1,11 @@
 import React from "react";
-import { ProductDetails, ProductOwnerDetails } from "../../components/index";
+import { ProductDetailsContainer, ProductOwnerDetails } from "../../components/index";
+import { productDetails } from "../../dummy-data/productDetails";
 
 const ItemDetailPage = () => {
   return (
     <div className="body-margin">
-      <ProductDetails />
+      <ProductDetailsContainer details={productDetails} />
       <ProductOwnerDetails />
     </div>
   );

@@ -11,9 +11,11 @@ import HeaderSlider from "./header-slider/header-slider";
 import SearchResultTabs from "./search-result-tabs/search-result-tabs";
 import AppAdsCard from "./app-ads-card/app-ads-card";
 import AddYourContent from "./add-your-content/add-your-content";
-import ProductDetails from "./product-details/product-details";
+import ProductDetailsContainer from "./product-details-container/product-details-container";
 import ProductOwnerDetails from "./product-owner-details/product-owner-details";
 import ProductRowInfo from "./product-row-info/product-row-info";
+import ProductDetailsTab from "./product-details-tab/product-details-tab";
+import ProductDetails from "./product-details/product-details";
 
 export {
   AppHeader,
@@ -29,7 +31,9 @@ export {
   SearchResultTabs,
   AppAdsCard,
   AddYourContent,
-  ProductDetails,
+  ProductDetailsContainer,
   ProductOwnerDetails,
   ProductRowInfo,
+  ProductDetailsTab,
+  ProductDetails
 };
