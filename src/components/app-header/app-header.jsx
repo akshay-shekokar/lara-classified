@@ -1,15 +1,20 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Icon, Button } from "semantic-ui-react";
 import { AkSidebar } from "../../ak-components";
 import { HeaderSlider } from "../index";
 import "./app-header.css";
 
 const AppHeader = () => {
+  const history = useHistory();
   const [slider, showSlider] = useState(false);
   return (
     <div className="ak-header">
       <nav className="ak-navbar body-padding">
-        <div className="ak-navbar-icon">
+        <div
+          className="ak-navbar-icon"
+          onClick={() => history.push(`/home`)}
+        >
           <img
             src="https://laraclassified.bedigit.com/storage/app/default/logo.png?v=1"
             alt="laraclassified"
@@ -36,7 +41,11 @@ const AppHeader = () => {
           <Button size="large">
             <Icon name="tags" /> Pricing
           </Button>
-          <Button size="large" color="yellow">
+          <Button
+            size="large"
+            color="yellow"
+            onClick={() => history.push(`/create-post`)}
+          >
             <Icon name="plus circle" /> Add Listing
           </Button>
         </div>

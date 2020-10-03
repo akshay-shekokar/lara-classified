@@ -17,6 +17,10 @@
   justify-content: space-between;
 }
 
+.ak-navbar-icon {
+  cursor: pointer;
+}
+
 .ak-main-logo {
   width: auto;
   height: 40px;

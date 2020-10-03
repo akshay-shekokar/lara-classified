@@ -1,9 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Icon, Button } from "semantic-ui-react";
 import "./home-page-region.css";
 import { city } from "../../dummy-data/city";
 
 const HomePageRegion = () => {
+  const history = useHistory();
   return (
     <div className="ak-hp-region-container body-margin">
       <h3>
@@ -22,7 +24,11 @@ const HomePageRegion = () => {
               <a>More cities »</a>
             </div>
           </div>
-          <Button size="large" color="yellow">
+          <Button
+            size="large"
+            color="yellow"
+            onClick={() => history.push(`/create-post`)}
+          >
             <Icon name="plus circle" /> Add Listing
           </Button>
         </div>
