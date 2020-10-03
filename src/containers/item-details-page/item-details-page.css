@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1000px) {
+  .ak-item-and-owner-detail {
+    display: flex;
+    padding-top: 2rem;
+  }
+  .ak-pd-container {
+    flex: 3;
+    margin-right: 1.5rem;
+    margin-top: 0;
+  }
+  .ak-pod-container {
+    margin-top: 0;
+    flex: 1;
+  }
+}
