@@ -11,6 +11,23 @@
   padding: 2.5rem 1.5rem;
 }
 
+.ak-red {
+  color: red;
+}
+
+.ak-display-inline {
+  display: inline;
+}
+
+.ak-display-block {
+  display: block;
+}
+
+.ak-input-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 @media only screen and (min-width: 1000px) {
   .body-margin {
     margin: 2.5rem 7.5rem;

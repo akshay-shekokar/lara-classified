@@ -20,6 +20,7 @@ import SimilarAds from "./similar-ads/similar-ads";
 import CreatePostAdDetails from "./create-post-ad-details/create-post-ad-details";
 import CreatePostAdPhotos from "./create-post-ad-photos/create-post-ad-photos";
 import CreatePostAdFinish from "./create-post-ad-finish/create-post-ad-finish";
+import SelectInputCategory from "./select-input-category/select-input-category";
 
 export {
   AppHeader,
@@ -44,4 +45,5 @@ export {
   CreatePostAdDetails,
   CreatePostAdPhotos,
   CreatePostAdFinish,
+  SelectInputCategory,
 };
