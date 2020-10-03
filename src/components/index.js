@@ -17,6 +17,9 @@ import ProductRowInfo from "./product-row-info/product-row-info";
 import ProductDetailsTab from "./product-details-tab/product-details-tab";
 import ProductDetails from "./product-details/product-details";
 import SimilarAds from "./similar-ads/similar-ads";
+import CreatePostAdDetails from "./create-post-ad-details/create-post-ad-details";
+import CreatePostAdPhotos from "./create-post-ad-photos/create-post-ad-photos";
+import CreatePostAdFinish from "./create-post-ad-finish/create-post-ad-finish";
 
 export {
   AppHeader,
@@ -37,5 +40,8 @@ export {
   ProductRowInfo,
   ProductDetailsTab,
   ProductDetails,
-  SimilarAds
+  SimilarAds,
+  CreatePostAdDetails,
+  CreatePostAdPhotos,
+  CreatePostAdFinish,
 };

@@ -1,0 +1,14 @@
+.ak-create-post-page {
+  padding-top: 2rem;
+}
+
+.ak-create-post-container .ui.unstackable.steps {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.ak-create-post-step-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  background: #f5f5f5;
+}
