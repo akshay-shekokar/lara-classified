@@ -1,0 +1,47 @@
+.ak-pod-container {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.ak-pod-details-container {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.ak-pod-avatar {
+  padding-right: 1rem;
+}
+
+.ak-pod-posted-by {
+  color: #999;
+  font-size: 0.9rem;
+
+  line-height: 1.5rem;
+}
+
+.ak-pod-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.ak-pod-ratings {
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.5rem 0.25rem;
+  line-height: 1.5rem;
+}
+
+.ak-pod-more-info {
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ak-pod-more-info-fields {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}

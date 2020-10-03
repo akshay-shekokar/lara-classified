@@ -20,7 +20,7 @@ export const productOwnerDetails = {
   rating: 3,
   location: "New York City",
   joined: "4 years Ago",
-  contaactDetails: {
+  contactDetails: {
     mobile: "9012345678",
     email: "temp@remp.com",
   },
