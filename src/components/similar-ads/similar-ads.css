@@ -1,0 +1,30 @@
+.ak-similar-ads-container {
+  margin: 2.5rem 0;
+}
+
+.ak-similar-ads-header-label {
+  font-weight: lighter;
+  color: #999;
+}
+
+.ak-similar-ads-header-label > b {
+  color: black;
+}
+
+.ak-similar-ads-header-actions {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  color: #369;
+  transition: 0.3s;
+}
+
+.ak-similar-ads-header-actions:hover {
+  color: #fa7722;
+  font-weight: 700;
+}
+
+.ak-similar-ads-cards .ui.cards {
+  flex-wrap: nowrap;
+}

@@ -16,6 +16,7 @@ import ProductOwnerDetails from "./product-owner-details/product-owner-details";
 import ProductRowInfo from "./product-row-info/product-row-info";
 import ProductDetailsTab from "./product-details-tab/product-details-tab";
 import ProductDetails from "./product-details/product-details";
+import SimilarAds from "./similar-ads/similar-ads";
 
 export {
   AppHeader,
@@ -35,5 +36,6 @@ export {
   ProductOwnerDetails,
   ProductRowInfo,
   ProductDetailsTab,
-  ProductDetails
+  ProductDetails,
+  SimilarAds
 };
