@@ -21,12 +21,17 @@ const visited = {
 
 const CreatePostPage = () => {
   const [activeStep, setActiveStep] = useState(STEPS.AD_DETAILS);
+  const [postData, setPostData] = useState({});
   return (
     <div className="ak-create-post-page body-margin">
       <div className="ak-create-post-container">
         <Step.Group unstackable>
-          {Object.keys(STEPS).map((step) => (
-            <Step active={activeStep === STEPS[step]} disabled={!visited[step]}>
+          {Object.keys(STEPS).map((step, key) => (
+            <Step
+              key={step}
+              active={activeStep === STEPS[step]}
+              disabled={!visited[step]}
+            >
               <Step.Content>
                 <Step.Title>{STEPS[step]}</Step.Title>
               </Step.Content>
@@ -36,7 +41,8 @@ const CreatePostPage = () => {
         <div className="ak-create-post-step-container">
           {activeStep === STEPS.AD_DETAILS && (
             <CreatePostAdDetails
-              next={() => {
+              data={postData}
+              goToNext={() => {
                 visited.PHOTOS = true;
                 setActiveStep(STEPS.PHOTOS);
               }}
@@ -44,7 +50,7 @@ const CreatePostPage = () => {
           )}
           {activeStep === STEPS.PHOTOS && (
             <CreatePostAdPhotos
-              next={() => {
+              goToNext={() => {
                 visited.FINISH = true;
                 setActiveStep(STEPS.FINISH);
               }}

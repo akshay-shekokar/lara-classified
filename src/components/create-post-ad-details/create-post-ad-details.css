@@ -1,8 +1,25 @@
 .ak-input-fields {
   padding: 0.75rem 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .ak-input-fields-info-text {
   color: #6c757d;
   font-size: 0.75rem;
+}
+
+.ak-input-action-buttons{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.editor-wrapper {
+  background: #fff;
+}
+
+.editor-input {
+  height: 300px;
+  padding: 0 1rem;
 }
