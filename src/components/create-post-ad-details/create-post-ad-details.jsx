@@ -44,7 +44,7 @@ const CreatePostAdDetails = ({data, goToNext}) => {
     !title && errorList.push("Please enter valid title");
     !price && errorList.push("Please enter valid price");
     !city && errorList.push("Please enter valid city");
-    if (!errorList.length) {
+    if (errorList.length) {
       setErrorList(errorList);
     } else {
       goToNext({

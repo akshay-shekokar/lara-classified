@@ -42,8 +42,9 @@ const CreatePostPage = () => {
           {activeStep === STEPS.AD_DETAILS && (
             <CreatePostAdDetails
               data={postData}
-              goToNext={() => {
+              goToNext={(data) => {
                 visited.PHOTOS = true;
+                setPostData({ ...postData, ...data });
                 setActiveStep(STEPS.PHOTOS);
               }}
             />
