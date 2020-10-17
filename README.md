@@ -1,14 +1,11 @@
 TODO List:
-1. Add Router
-2. Page Not found Navigation
-3. Results Page
 4. Filters
-5. Visit Item Page
 6. Login/Authentication
 7. DB Connection
-8. Redux
 9. Env file setup
-
+10. User Page Setups
+11. Visit Add/ if add posted by usesr => option to edit
+12. Footer Link Pages
 
 
 
