@@ -13,9 +13,9 @@ const ProductDetails = ({ details }) => {
     categories,
     locations,
     rating,
-    imageUrls,
+    // imageUrls,
     reviews,
-    price,
+    // price,
     description,
   } = details;
   return (

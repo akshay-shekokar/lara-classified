@@ -26,7 +26,7 @@ const CreatePostPage = () => {
     <div className="ak-create-post-page body-margin">
       <div className="ak-create-post-container">
         <Step.Group unstackable>
-          {Object.keys(STEPS).map((step, key) => (
+          {Object.keys(STEPS).map((step) => (
             <Step
               key={step}
               active={activeStep === STEPS[step]}

@@ -5,7 +5,7 @@ import { AkLink } from "../../ak-components";
 import "./product-owner-details.css";
 
 const ProductOwnerDetails = ({ owner }) => {
-  const { name, rating, location, joined, contactDetails } = owner;
+  const { name, rating, location, joined } = owner;
   return (
     <div className="ak-pod-container">
       <div className="ak-pod-details-container">
