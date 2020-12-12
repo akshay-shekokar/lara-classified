@@ -16,10 +16,6 @@ export const SEARCH_TYPE = {
     label: "PRICE: HIGH TO LOW",
   },
   RELEVANCE: {
-    id: "low",
-    label: "RELEVANCE",
-  },
-  RELEVANCE: {
     id: "relevance",
     label: "RELEVANCE",
   },
