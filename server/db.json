@@ -1,5 +1,5 @@
 {
-    "city": [
+    "cities": [
         { "id": 1, "name": "Mumbai", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
         { "id": 2, "name": "Pune", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
         { "id": 3, "name": "Nagpur", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},

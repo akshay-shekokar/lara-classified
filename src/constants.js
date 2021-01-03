@@ -1,5 +1,11 @@
 export const doNothing = () => {};
 
+export const SEVERITY = {
+  HIGH: "HIGH",
+  MEDIUM: "MEDIUM",
+  LOW: "LOW",
+};
+
 export const ADS_TYPE = {
   ALL_ADS: "All Ads",
   PROFESSIONAL: "Professional",

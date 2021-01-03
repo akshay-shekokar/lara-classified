@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Root from "./router/route-config";
-import { getCityService } from "./service/init.service";
+import { getCityService } from "./services/init.service";
 import { AppHeader, AppFooter } from "./components/index";
 import "./App.css";
 

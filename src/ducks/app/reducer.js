@@ -1,13 +1,23 @@
 const INITIAL_STATE = {
-  city: []
+  errors: [],
+  cities: []
 }
+
+const setErrorHandler = (state, { data }) => ({
+  ...state,
+  errors: [
+    ...(state.errors || []),
+    ...data
+  ]
+});
 
 const setCityHandler = (state, { data }) => ({
   ...state,
-  city: data
+  cities: data
 });
 
 const ACTION_HANDLERS = {
+  SET_ERROR: setErrorHandler,
   SET_CITY: setCityHandler
 }
 

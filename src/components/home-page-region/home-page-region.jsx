@@ -1,11 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { Icon, Button } from "semantic-ui-react";
+import { Icon, Button, Dropdown } from "semantic-ui-react";
 import "./home-page-region.css";
-import { city } from "../../dummy-data/city";
+import { getCitiesSelector } from "../../selectors/init.selector";
 
-const HomePageRegion = () => {
+const HomePageRegion = ({ cities }) => {
   const history = useHistory();
+
+  const onSelectCity = ({ id }) => {
+    history.push(`/search-results?city=${id}`);
+  };
+
   return (
     <div className="ak-hp-region-container body-margin">
       <h3>
@@ -15,13 +22,19 @@ const HomePageRegion = () => {
       <div className="ak-hp-region-list-map">
         <div className="ak-hp-region-list-ctrls">
           <div className="ak-hp-region-list">
-            {city.slice(0, 14).map((c) => (
-              <div className="ak-hp-region-name" key={c}>
-                <a>{c}</a>
+            {cities.slice(0, 14).map(({ id, name }) => (
+              <div className="ak-hp-region-name" key={id} onClick={() => onSelectCity({ id })}>
+                <a>{name}</a>
               </div>
             ))}
             <div className="ak-hp-region-name">
-              <a>More cities »</a>
+              <Dropdown text='More cities »'>
+                <Dropdown.Menu>
+                  {cities.map(({ id, name }) => (
+                    <Dropdown.Item text={name} key={id} onClick={() => onSelectCity({ id })} />
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
           <Button
@@ -38,4 +51,12 @@ const HomePageRegion = () => {
   );
 };
 
-export default HomePageRegion;
+HomePageRegion.propTypes = {
+  cities: PropTypes.arrayOf(PropTypes.any).isRequired
+};
+
+export default connect(
+  state => ({
+    cities: getCitiesSelector(state)
+  })
+)(HomePageRegion);
