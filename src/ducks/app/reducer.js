@@ -7,7 +7,7 @@ const setErrorHandler = (state, { data }) => ({
   ...state,
   errors: [
     ...(state.errors || []),
-    ...data
+    data
   ]
 });
 
