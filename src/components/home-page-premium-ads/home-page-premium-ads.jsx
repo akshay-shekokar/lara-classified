@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import { Icon, Card, Image, Rating } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
@@ -8,6 +9,8 @@ import { getPremiumAdsService } from "../../services/init.service";
 import { getPremiumAdsSelector } from "../../selectors/init.selector";
 
 const HomePagePremiumAds = ({ adsList, getPremiumAdsService }) => {
+  const history = useHistory();
+
   useEffect(() => {
     getPremiumAdsService();
   }, []);
@@ -31,7 +34,7 @@ const HomePagePremiumAds = ({ adsList, getPremiumAdsService }) => {
               {adsList.slice(0, 5).map(
                 ({ id, imageUrl, title, reviews, rating, price }) => (
                   <Card
-                    onClick={() => console.log("Premium Ads id:", id)}
+                    onClick={() => history.push(`/item-details/${id}`)}
                     key={id}
                   >
                     <Image src={imageUrl} wrapped ui={false} />

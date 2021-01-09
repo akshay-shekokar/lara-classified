@@ -2,7 +2,7 @@ export const premiumAds = [
   {
     id: 1,
     imageUrl:
-      "images/item.jpg",
+      "/images/item.jpg",
     title: "Mobile",
     rating: 4,
     reviews: 10,
@@ -11,7 +11,7 @@ export const premiumAds = [
   {
     id: 2,
     imageUrl:
-      "images/item.jpg",
+      "/images/item.jpg",
     title: "Mobile",
     rating: 4,
     reviews: 10,
@@ -20,7 +20,7 @@ export const premiumAds = [
   {
     id: 3,
     imageUrl:
-      "images/item.jpg",
+      "/images/item.jpg",
     title: "Mobile",
     rating: 4,
     reviews: 10,
@@ -29,7 +29,7 @@ export const premiumAds = [
   {
     id: 4,
     imageUrl:
-      "images/item.jpg",
+      "/images/item.jpg",
     title: "Mobile",
     rating: 4,
     reviews: 10,
@@ -38,7 +38,7 @@ export const premiumAds = [
   {
     id: 5,
     imageUrl:
-      "images/item.jpg",
+      "/images/item.jpg",
     title: "Mobile",
     rating: 4,
     reviews: 10,
