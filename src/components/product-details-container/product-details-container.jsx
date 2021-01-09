@@ -42,7 +42,7 @@ const ProductDetails = ({ details }) => {
         {reviews} review
       </div>
       <ProductDetailsTab description={description} />
-      <div class="ak-pd-send-message-container">
+      <div className="ak-pd-send-message-container">
         <Button basic>
           <Icon name="mail" />
           Send a message

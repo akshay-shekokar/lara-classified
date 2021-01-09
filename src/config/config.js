@@ -4,4 +4,7 @@ const urls = {
   appDbUrl: "http://localhost:9004/",
 };
 
-export const basicInstance = getAxiosInstance({ baseUrl: urls.appDbUrl });
+const basicInstance = getAxiosInstance({ baseUrl: urls.appDbUrl });
+basicInstance.defaults.headers.post["Content-Type"] = "application/json";
+
+export { basicInstance };

@@ -9,8 +9,8 @@ import "./create-post-page.css";
 
 const STEPS = {
   AD_DETAILS: "Ad Details",
-  PHOTOS: "Photos",
-  FINISH: "Finish",
+  // PHOTOS: "Photos",
+  // FINISH: "Finish",
 };
 
 const visited = {
@@ -21,7 +21,10 @@ const visited = {
 
 const CreatePostPage = () => {
   const [activeStep, setActiveStep] = useState(STEPS.AD_DETAILS);
-  const [postData, setPostData] = useState({});
+  const [postData, setPostData] = useState({
+    category: [],
+    city: []
+  });
   return (
     <div className="ak-create-post-page body-margin">
       <div className="ak-create-post-container">
@@ -41,11 +44,11 @@ const CreatePostPage = () => {
         <div className="ak-create-post-step-container">
           {activeStep === STEPS.AD_DETAILS && (
             <CreatePostAdDetails
-              data={postData}
+              adData={postData}
               goToNext={(data) => {
                 visited.PHOTOS = true;
                 setPostData({ ...postData, ...data });
-                setActiveStep(STEPS.PHOTOS);
+                // setActiveStep(STEPS.FINISH);
               }}
             />
           )}
@@ -63,7 +66,7 @@ const CreatePostPage = () => {
           {activeStep === STEPS.FINISH && (
             <CreatePostAdFinish
               prev={() => {
-                setActiveStep(STEPS.PHOTOS);
+                setActiveStep(STEPS.AD_DETAILS);
               }}
             />
           )}
