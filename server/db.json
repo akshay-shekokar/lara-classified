@@ -222,5 +222,67 @@
             "reviews": 10,
             "price": 3000
         }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Category 1",
+            "icon": "car",
+            "parent": []
+        },
+        {
+            "id": 2,
+            "name": "Category 2",
+            "icon": "home",
+            "parent": []
+        },
+        {
+            "id": 3,
+            "name": "Category 3",
+            "icon": "car",
+            "parent": []
+        },
+        {
+            "id": 4,
+            "name": "Category 4",
+            "icon": "home",
+            "parent": []
+        },
+        {
+            "id": 5,
+            "name": "Category 5",
+            "icon": "car",
+            "parent": []
+        },
+        {
+            "id": 6,
+            "name": "Category 6",
+            "icon": "home",
+            "parent": []
+        },
+        {
+            "id": 7,
+            "name": "Category 7",
+            "icon": "car",
+            "parent": []
+        },
+        {
+            "id": 8,
+            "name": "Category 8",
+            "icon": "home",
+            "parent": []
+        },
+        {
+            "id": 9,
+            "name": "Category 9",
+            "icon": "car",
+            "parent": []
+        },
+        {
+            "id": 10,
+            "name": "Category 10",
+            "icon": "home",
+            "parent": []
+        }
     ]
 }

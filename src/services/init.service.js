@@ -7,6 +7,11 @@ export const getCityService = handleDispatch(async ({ dispatch }) => {
   dispatch(appAction.setCityAction(cities));
 });
 
+export const getCategoriesService = handleDispatch(async ({ dispatch }) => {
+  const categories = (await basicInstance.get("categories")).data;
+  dispatch(appAction.setCategoriesAction(categories));
+});
+
 export const getPremiumAdsService = handleDispatch(
   async ({ dispatch }, { page = 1, limit = 5 }) => {
     const ads = (

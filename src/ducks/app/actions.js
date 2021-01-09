@@ -9,6 +9,11 @@ const setCityAction = (data) => ({
     data
 });
 
+const setCategoriesAction = (data) => ({
+    type: "SET_CATEGORIES",
+    data
+});
+
 const setPremiumAdsAction = (data) => ({
     type: "SET_PREMIUM_ADS",
     data
@@ -17,5 +22,6 @@ const setPremiumAdsAction = (data) => ({
 export default {
     setErrorAction,
     setCityAction,
+    setCategoriesAction,
     setPremiumAdsAction
 };

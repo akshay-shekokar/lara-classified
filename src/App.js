@@ -3,13 +3,14 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Root from "./router/route-config";
-import { getCityService } from "./services/init.service";
+import { getCityService, getCategoriesService } from "./services/init.service";
 import { AppHeader, AppFooter } from "./components/index";
 import "./App.css";
 
-const App = ({ getCityService }) => {
+const App = ({ getCityService, getCategoriesService }) => {
   useEffect(() => {
     getCityService();
+    getCategoriesService();
   }, []);
 
   return (
@@ -28,7 +29,8 @@ const App = ({ getCityService }) => {
 }
 
 App.propTypes = {
-  getCityService: PropTypes.func.isRequired
+  getCityService: PropTypes.func.isRequired,
+  getCategoriesService: PropTypes.func.isRequired
 };
 
-export default connect(null, { getCityService })(App);
+export default connect(null, { getCityService, getCategoriesService })(App);

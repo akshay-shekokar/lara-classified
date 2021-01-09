@@ -1,10 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { Icon } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
+import { getCategoriesSelector } from "../../selectors/init.selector";
 import "./home-page-browse-category.css";
-import { categories } from "../../dummy-data/categories";
 
-const HomePageBrowseCategory = () => {
+const HomePageBrowseCategory = ({ categories }) => {
+  const history = useHistory();
   return (
     <div className="ak-hp-browse-category-container body-margin">
       <AkSection
@@ -20,9 +24,11 @@ const HomePageBrowseCategory = () => {
         }
         contents={
           <div className="ak-hp-browse-category-cards">
-            {categories.map(({ icon, name }) => (
-              <div className="ak-hp-category-card" key={name}>
-                <div className="ak-hp-category-card-icon"><Icon name={icon} size="huge" color="blue" /></div>
+            {categories.map(({ icon, name, id }) => (
+              <div className="ak-hp-category-card" key={id} onClick={() => history.push(`/search-results?category=${id}`)}>
+                <div className="ak-hp-category-card-icon">
+                  <Icon name={icon} size="huge" color="blue" />
+                </div>
                 <div className="ak-hp-category-card-title">{name}</div>
               </div>
             ))}
@@ -33,4 +39,10 @@ const HomePageBrowseCategory = () => {
   );
 };
 
-export default HomePageBrowseCategory;
+HomePageBrowseCategory.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.any).isRequired
+};
+
+export default connect((state) => ({
+  categories: getCategoriesSelector(state)
+}))(HomePageBrowseCategory);

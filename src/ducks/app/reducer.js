@@ -16,6 +16,11 @@ const setCityHandler = (state, { data }) => ({
   cities: data
 });
 
+const setCategoriesHandler = (state, { data }) => ({
+  ...state,
+  categories: data
+});
+
 const setPremiumAdsHandler = (state, { data: {data, page, limit} }) => {
   const premiumAds = [...(state.premiumAds || [])];
   const index = (page * limit) - limit + 1;
@@ -30,6 +35,7 @@ const setPremiumAdsHandler = (state, { data: {data, page, limit} }) => {
 const ACTION_HANDLERS = {
   SET_ERROR: setErrorHandler,
   SET_CITY: setCityHandler,
+  SET_CATEGORIES: setCategoriesHandler,
   SET_PREMIUM_ADS: setPremiumAdsHandler
 }
 
