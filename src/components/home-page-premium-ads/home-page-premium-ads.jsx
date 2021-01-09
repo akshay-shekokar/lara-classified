@@ -23,7 +23,7 @@ const HomePagePremiumAds = ({ adsList, getPremiumAdsService }) => {
             <div className="ak-hp-premium-ads-header-label">
               Premium <b>Ads</b>
             </div>
-            <div className="ak-hp-premium-ads-header-actions">
+            <div className="ak-hp-premium-ads-header-actions" onClick={() => history.push(`/search-results?isPremium=true`)}>
               View More <Icon name="list" />
             </div>
           </React.Fragment>
