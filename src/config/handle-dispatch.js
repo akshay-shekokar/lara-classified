@@ -2,7 +2,7 @@ import { SEVERITY } from "../constants";
 import appAction from "../ducks/app/actions";
 
 export const handleDispatch = (logicFn) => {
-    return data => {
+    return (data = {}) => {
         return async (dispatch, getState) => {
             try {
                 await logicFn({ dispatch, getState }, data);

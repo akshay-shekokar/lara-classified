@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { Icon, Card, Image, Rating } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
 import "./home-page-premium-ads.css";
-import { premiumAds } from "../../dummy-data/premiumAds";
+import { getPremiumAdsService } from "../../services/init.service";
+import { getPremiumAdsSelector } from "../../selectors/init.selector";
 
-const HomePagePremiumAds = () => {
+const HomePagePremiumAds = ({ adsList, getPremiumAdsService }) => {
+  useEffect(() => {
+    getPremiumAdsService();
+  }, []);
+
   return (
     <div className="ak-hp-premium-ads-container body-margin">
       <AkSection
@@ -21,9 +28,12 @@ const HomePagePremiumAds = () => {
         contents={
           <div className="ak-hp-premium-ads-cards">
             <Card.Group>
-              {premiumAds.map(
+              {adsList.slice(0, 5).map(
                 ({ id, imageUrl, title, reviews, rating, price }) => (
-                  <Card onClick={() => console.log("Premium Ads id:", id)} key={id}>
+                  <Card
+                    onClick={() => console.log("Premium Ads id:", id)}
+                    key={id}
+                  >
                     <Image src={imageUrl} wrapped ui={false} />
                     <Card.Content>
                       <Card.Header>{title}</Card.Header>
@@ -54,4 +64,16 @@ const HomePagePremiumAds = () => {
   );
 };
 
-export default HomePagePremiumAds;
+HomePagePremiumAds.propTypes = {
+  adsList: PropTypes.arrayOf(PropTypes.any).isRequired,
+  getPremiumAdsService: PropTypes.func.isRequired
+};
+
+export default connect(
+  (state) => ({
+    adsList: getPremiumAdsSelector(state),
+  }),
+  {
+    getPremiumAdsService,
+  }
+)(HomePagePremiumAds);

@@ -1,34 +1,33 @@
 {
-    "env": {
-        "browser": true,
-        "jest": true,
-        "es6": true
-    },
-    "plugins": [
-        "import"
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": ["import"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
     ],
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "rules": {
-        "no-unused-vars": [
-            "error",
-            {
-                "vars": "all",
-                "args": "after-used",
-                "ignoreRestSiblings": true
-            }
-        ],
-        "no-console": "warn",
-        "no-eval": "error",
-        "import/first": "error",
-        "prefer-const": [
-            "error",
-            {
-                "destructuring": "all"
-            }
-        ]
-    }
+    "no-console": "warn",
+    "no-eval": "error",
+    "import/first": "error",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ]
+  }
 }

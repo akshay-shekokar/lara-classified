@@ -1,24 +1,226 @@
 {
     "cities": [
-        { "id": 1, "name": "Mumbai", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 2, "name": "Pune", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 3, "name": "Nagpur", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 4, "name": "Nashik", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 5, "name": "Thane", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 6, "name": "Aurangabad", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 7, "name": "Solapur", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 8, "name": "Dhule", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 9, "name": "Amaravati", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 10, "name": "Kolhapur", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 11, "name": "Nanded", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 12, "name": "Sangli", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 13, "name": "Akola", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 14, "name": "Latur", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 15, "name": "Jalgaon", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 16, "name": "Ahmednagar", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 17, "name": "Parbhani", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 18, "name": "Jalna", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 19, "name": "Satara", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1},
-        { "id": 20, "name": "Beed", "pincode": 123456, "stateId": 1, "lat": "123", "long": "456", "popularityIndex": 1}
-    ] 
+        {
+            "id": 1,
+            "name": "Mumbai",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 2,
+            "name": "Pune",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 3,
+            "name": "Nagpur",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 4,
+            "name": "Nashik",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 5,
+            "name": "Thane",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 6,
+            "name": "Aurangabad",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 7,
+            "name": "Solapur",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 8,
+            "name": "Dhule",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 9,
+            "name": "Amaravati",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 10,
+            "name": "Kolhapur",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 11,
+            "name": "Nanded",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 12,
+            "name": "Sangli",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 13,
+            "name": "Akola",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 14,
+            "name": "Latur",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 15,
+            "name": "Jalgaon",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 16,
+            "name": "Ahmednagar",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 17,
+            "name": "Parbhani",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 18,
+            "name": "Jalna",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 19,
+            "name": "Satara",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        },
+        {
+            "id": 20,
+            "name": "Beed",
+            "pincode": 123456,
+            "stateId": 1,
+            "lat": "123",
+            "long": "456",
+            "popularityIndex": 1
+        }
+    ],
+    "premiumAds": [
+        {
+            "id": 1,
+            "imageUrl": "images/item.jpg",
+            "title": "Mobile",
+            "rating": 4,
+            "reviews": 10,
+            "price": 3000
+        },
+        {
+            "id": 2,
+            "imageUrl": "images/item.jpg",
+            "title": "Mobile",
+            "rating": 4,
+            "reviews": 10,
+            "price": 3000
+        },
+        {
+            "id": 3,
+            "imageUrl": "images/item.jpg",
+            "title": "Mobile",
+            "rating": 4,
+            "reviews": 10,
+            "price": 3000
+        },
+        {
+            "id": 4,
+            "imageUrl": "images/item.jpg",
+            "title": "Mobile",
+            "rating": 4,
+            "reviews": 10,
+            "price": 3000
+        },
+        {
+            "id": 5,
+            "imageUrl": "images/item.jpg",
+            "title": "Mobile",
+            "rating": 4,
+            "reviews": 10,
+            "price": 3000
+        }
+    ]
 }
