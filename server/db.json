@@ -284,5 +284,117 @@
             "icon": "home",
             "parent": []
         }
-    ]
+    ],
+    "latestAds": [
+        {
+          "id": 1,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 2,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "10 hours ago",
+          "category": ["test", "temp"],
+          "place": ["abc", "xyz"]
+        },
+        {
+          "id": 3,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 4,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 9,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 10,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 5,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 6,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 7,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        },
+        {
+          "id": 8,
+          "imageUrl": "images/item.jpg",
+          "title": "Mobile",
+          "rating": 4,
+          "reviews": 10,
+          "price": 3000,
+          "duration": "1 day ago",
+          "category": ["test"],
+          "place": ["abc"]
+        }
+      ]
 }

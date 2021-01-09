@@ -7,7 +7,7 @@ TODO List:
 11. Visit Add/ if add posted by usesr => option to edit
 12. Footer Link Pages
 13. similarAds mechanism needs to be implemented
-
+14. search result ads data and all the logic
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

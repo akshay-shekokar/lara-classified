@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import {
   Divider,
   Icon,
@@ -13,7 +14,7 @@ import { EditorState, convertToRaw } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { ADS_TYPE } from "../../constants";
 import "./create-post-ad-details.css";
-import { city as cityDummy } from "../../dummy-data/city";
+import { getCitiesSelector } from "../../selectors/init.selector";
 
 const LocalLabel = ({ name, required }) => {
   return (
@@ -24,7 +25,12 @@ const LocalLabel = ({ name, required }) => {
   );
 };
 
-const CreatePostAdDetails = ({data, goToNext}) => {
+LocalLabel.propTypes = {
+  name: PropTypes.string.isRequired,
+  required: PropTypes.bool.isRequired
+}
+
+const CreatePostAdDetails = ({ data, cities, goToNext }) => {
   const [errorList, setErrorList] = useState([]);
   const [editorState, setEditorState] = useState(
     data.description || EditorState.createEmpty()
@@ -82,7 +88,7 @@ const CreatePostAdDetails = ({data, goToNext}) => {
           placeholder="Category"
           fluid
           value={category}
-          onChange={(event, data) => setCategory  (data.value)}
+          onChange={(event, data) => setCategory(data.value)}
         />
       </div>
       <div className="ak-input-fields">
@@ -115,7 +121,7 @@ const CreatePostAdDetails = ({data, goToNext}) => {
           This will be displayed on the ad details page to inform other users.
         </span>
       </div>
-      <div className="ak-input-fields" style={{maxWidth: "1000px"}}>
+      <div className="ak-input-fields" style={{ maxWidth: "1000px" }}>
         <LocalLabel name="Description" required={false} />
         <Editor
           editorState={editorState}
@@ -147,7 +153,7 @@ const CreatePostAdDetails = ({data, goToNext}) => {
           search
           selection
           multiple
-          options={cityDummy.map((c, key) => ({ key, value: key, text: c }))}
+          options={cities.map((c, key) => ({ key, value: key, text: c }))}
           value={city}
           onChange={(event, data) => setCity(data.value)}
         />
@@ -179,6 +185,22 @@ const CreatePostAdDetails = ({data, goToNext}) => {
 };
 
 CreatePostAdDetails.propTypes = {
+  data: PropTypes.shape({
+    category: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    }),
+    description: PropTypes.any.isRequired,
+    city: PropTypes.any.isRequired,
+    type: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    tags: PropTypes.any.isRequired,
+    value: PropTypes.any.isRequired
+  }),
+  cities: PropTypes.arrayOf(PropTypes.any),
   goToNext: PropTypes.func.isRequired,
 };
-export default CreatePostAdDetails;
+export default connect((state) => ({
+  cities: getCitiesSelector(state),
+}))(CreatePostAdDetails);

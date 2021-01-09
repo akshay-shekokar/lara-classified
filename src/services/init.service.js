@@ -20,3 +20,8 @@ export const getPremiumAdsService = handleDispatch(
     dispatch(appAction.setPremiumAdsAction({ data: ads, page, limit }));
   }
 );
+
+export const getLatestAdsService = handleDispatch(async ({ dispatch }) => {
+  const ads = (await basicInstance.get(`latestAds`)).data;
+  dispatch(appAction.setLatestAdsAction(ads));
+});

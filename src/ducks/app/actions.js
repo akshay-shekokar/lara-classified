@@ -19,9 +19,15 @@ const setPremiumAdsAction = (data) => ({
     data
 });
 
+const setLatestAdsAction = (data) => ({
+    type: "SET_LATEST_ADS",
+    data
+});
+
 export default {
     setErrorAction,
     setCityAction,
     setCategoriesAction,
-    setPremiumAdsAction
+    setPremiumAdsAction,
+    setLatestAdsAction
 };
