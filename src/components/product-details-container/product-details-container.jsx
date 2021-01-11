@@ -4,13 +4,17 @@ import { Divider, Label, Rating, Button, Icon } from "semantic-ui-react";
 import { AkLink } from "../../ak-components/index";
 import { ProductRowInfo, ProductDetailsTab } from "../index";
 import "./product-details-container.css";
+import { useHistory } from "react-router-dom";
+import { ADS_TYPE } from "../../constants";
 
 const ProductDetails = ({ details }) => {
+  const history = useHistory();
   const {
-    name,
+    id,
+    title,
     type,
     postedDate,
-    categories,
+    category,
     city,
     rating,
     // imageUrls,
@@ -21,18 +25,22 @@ const ProductDetails = ({ details }) => {
   return (
     <div className="ak-pd-container">
       <div className="ak-pd-header">
-        <AkLink color="#369" hover="#fa7722" onClick={() => alert("asd")}>
-          {name}
+        <AkLink
+          color="#369"
+          hover="#fa7722"
+          onClick={() => history.replace(`/item-details/${id}`)}
+        >
+          {title}
         </AkLink>
         <Label color="grey" className="ak-pd-header-type">
-          {type}
+          {ADS_TYPE[type]}
         </Label>
       </div>
       <Divider />
       <div className="ak-pd-info-row">
         <ProductRowInfo
           postedDate={postedDate}
-          categoryIds={categories}
+          categoryIds={category}
           cityIds={city}
         />
       </div>
