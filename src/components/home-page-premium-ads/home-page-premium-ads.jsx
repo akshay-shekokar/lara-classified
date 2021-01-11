@@ -5,8 +5,8 @@ import { connect } from "react-redux";
 import { Icon, Card, Image, Rating } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
 import "./home-page-premium-ads.css";
-import { getPremiumAdsService } from "../../services/init.service";
-import { getPremiumAdsSelector } from "../../selectors/init.selector";
+import { getPremiumAdsService } from "../../services/ads.service";
+import { getPremiumAdsSelector } from "../../selectors/ads.selector";
 
 const HomePagePremiumAds = ({ adsList, getPremiumAdsService }) => {
   const history = useHistory();

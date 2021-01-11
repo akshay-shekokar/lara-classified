@@ -7,7 +7,7 @@ import "./product-details.css";
 const ProductDetails = ({ description }) => {
   return (
     <div>
-      <div className="ak-pd-description-text">{description}</div>
+      <div className="ak-pd-description-text">{JSON.stringify(description)}</div>
       <div className="ak-pd-details-line-action">
         <AkLink color="#369" hover="#fa7722">
           <Popup
@@ -36,7 +36,7 @@ const ProductDetails = ({ description }) => {
 };
 
 ProductDetails.propTypes = {
-  description: PropTypes.string.isRequired,
+  description: PropTypes.any.isRequired,
 };
 
 export default ProductDetails;

@@ -35,6 +35,6 @@ const ProductDetailsTab = ({ description }) => {
 };
 
 ProductDetailsTab.propTypes = {
-  description: PropTypes.string.isRequired,
+  description: PropTypes.any.isRequired,
 };
 export default ProductDetailsTab;

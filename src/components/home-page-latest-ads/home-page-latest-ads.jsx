@@ -6,8 +6,8 @@ import { Icon, Button } from "semantic-ui-react";
 import { AkSection } from "../../ak-components/index";
 import { AppAdsCard } from "../index";
 import "../home-page-premium-ads/home-page-premium-ads.css";
-import { getLatestAdsService } from "../../services/init.service";
-import { getLatestAdsSelector } from "../../selectors/init.selector";
+import { getLatestAdsService } from "../../services/ads.service";
+import { getLatestAdsSelector } from "../../selectors/ads.selector";
 
 const HomePageLatestAds = ({ adsList, getLatestAdsService }) => {
   const history = useHistory();

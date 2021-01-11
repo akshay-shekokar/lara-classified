@@ -24,10 +24,16 @@ const setLatestAdsAction = (data) => ({
     data
 });
 
+const setAdDetailsAction = (data) => ({
+    type: "SET_AD_DETAILS",
+    data
+});
+
 export default {
     setErrorAction,
     setCityAction,
     setCategoriesAction,
     setPremiumAdsAction,
-    setLatestAdsAction
+    setLatestAdsAction,
+    setAdDetailsAction
 };

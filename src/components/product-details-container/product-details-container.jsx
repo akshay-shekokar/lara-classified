@@ -9,9 +9,9 @@ const ProductDetails = ({ details }) => {
   const {
     name,
     type,
-    postedTime,
+    postedDate,
     categories,
-    locations,
+    city,
     rating,
     // imageUrls,
     reviews,
@@ -31,9 +31,9 @@ const ProductDetails = ({ details }) => {
       <Divider />
       <div className="ak-pd-info-row">
         <ProductRowInfo
-          duration={postedTime}
-          category={categories}
-          place={locations}
+          postedDate={postedDate}
+          categoryIds={categories}
+          cityIds={city}
         />
       </div>
       <div>Image Carousel will be here</div>

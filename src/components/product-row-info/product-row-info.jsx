@@ -3,32 +3,32 @@ import PropTypes from "prop-types";
 import { Icon } from "semantic-ui-react";
 import "./product-row-info.css";
 
-const ProductRowInfo = ({ duration, category, place }) => {
+const ProductRowInfo = ({ postedDate, /* categoryIds, cityIds */ }) => {
   return (
     <div>
       <span className="ak-ads-duration">
         <Icon name="time" />
-        {duration}
+        {postedDate}
       </span>
       <Icon name="file" />
-      {category.map((cat) => (
+      {/* {categoryIds.map((cat) => (
         <span className="ak-ads-link" key={cat}>
           {cat}{" "}
         </span>
       ))}
       <Icon name="globe" />
-      {place.map((p) => (
+      {cityIds.map((p) => (
         <span className="ak-ads-link" key={p}>
           {p}{" "}
         </span>
-      ))}
+      ))} */}
     </div>
   );
 };
 
 ProductRowInfo.propTypes = {
-  duration: PropTypes.string.isRequired,
-  category: PropTypes.arrayOf(PropTypes.string),
-  place: PropTypes.arrayOf(PropTypes.string),
+  postedDate: PropTypes.string.isRequired,
+  categoryIds: PropTypes.arrayOf(PropTypes.numbers),
+  cityIds: PropTypes.arrayOf(PropTypes.numbers),
 };
 export default ProductRowInfo;

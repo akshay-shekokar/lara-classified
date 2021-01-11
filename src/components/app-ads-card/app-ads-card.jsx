@@ -15,12 +15,11 @@ const AppAdsCard = ({ adList }) => {
             id,
             imageUrl,
             title,
-            reviews,
             rating,
             price,
-            duration,
+            postedDate,
             category,
-            place,
+            city,
           }) => (
             <Card onClick={() => history.push(`/item-details/${id}`)} key={id}>
               <Image src={imageUrl} wrapped ui={false} />
@@ -28,9 +27,9 @@ const AppAdsCard = ({ adList }) => {
                 <Card.Header>{title}</Card.Header>
                 <Card.Description>
                   <ProductRowInfo
-                    duration={duration}
-                    category={category}
-                    place={place}
+                    postedDate={postedDate}
+                    categoryIds={category}
+                    cityIds={city}
                   />
                   <div>
                     <Rating
@@ -39,7 +38,6 @@ const AppAdsCard = ({ adList }) => {
                       maxRating={5}
                       disabled
                     />{" "}
-                    {reviews} review
                   </div>
                 </Card.Description>
               </Card.Content>

@@ -9,8 +9,10 @@ import "./App.css";
 
 const App = ({ getCityService, getCategoriesService }) => {
   useEffect(() => {
-    getCityService();
-    getCategoriesService();
+    (async () => {
+      await getCityService();
+      await getCategoriesService();
+    })();
   }, []);
 
   return (
@@ -26,11 +28,11 @@ const App = ({ getCityService, getCategoriesService }) => {
       </Switch>
     </Router>
   );
-}
+};
 
 App.propTypes = {
   getCityService: PropTypes.func.isRequired,
-  getCategoriesService: PropTypes.func.isRequired
+  getCategoriesService: PropTypes.func.isRequired,
 };
 
 export default connect(null, { getCityService, getCategoriesService })(App);

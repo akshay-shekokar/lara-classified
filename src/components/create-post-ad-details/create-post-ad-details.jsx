@@ -66,6 +66,7 @@ const CreatePostAdDetails = ({
     } else {
       const data = {
         category,
+        city,
         type,
         title,
         price,

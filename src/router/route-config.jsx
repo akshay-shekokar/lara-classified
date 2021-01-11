@@ -20,7 +20,7 @@ const Root = () => {
       <Route path="/search-results">
         <SearchResultPage />
       </Route>
-      <Route path="/item-details">
+      <Route path="/item-details/:id">
         <ItemDetailsPage />
       </Route>
       <Route path="/create-post">

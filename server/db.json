@@ -467,10 +467,15 @@
     {
       "category": [
         1,
-        2
+        4
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "Temp",
+      "isPremium": false,
       "price": "111",
       "description": {
         "blocks": [
@@ -546,15 +551,21 @@
         ],
         "entityMap": {}
       },
+      "imageUrl": "images/item.jpg",
       "id": 12
     },
     {
       "category": [
         1,
+        4
+      ],
+      "city": [
+        2,
         3
       ],
       "type": "PROFESSIONAL",
       "title": "test",
+      "isPremium": false,
       "price": "12",
       "description": {
         "blocks": [
@@ -620,12 +631,17 @@
         ],
         "entityMap": {}
       },
+      "imageUrl": "images/item.jpg",
       "id": 13
     },
     {
       "category": [
+        1,
+        4
+      ],
+      "city": [
         2,
-        5
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "asdasd",
@@ -667,6 +683,7 @@
       },
       "postedDate": 1610222396765,
       "imageUrl": "images/item.jpg",
+      "isPremium": false,
       "rating": 0,
       "id": 14
     },
@@ -675,8 +692,13 @@
         1,
         4
       ],
+      "city": [
+        2,
+        3
+      ],
       "type": "PROFESSIONAL",
       "title": "testing",
+      "isPremium": false,
       "price": "111",
       "description": {
         "blocks": [
@@ -702,8 +724,13 @@
         2,
         4
       ],
+      "city": [
+        2,
+        3
+      ],
       "type": "PROFESSIONAL",
       "title": "asd",
+      "isPremium": false,
       "price": "2121",
       "description": {
         "blocks": [
@@ -729,6 +756,10 @@
         2,
         4
       ],
+      "city": [
+        2,
+        3
+      ],
       "type": "PROFESSIONAL",
       "title": "asd",
       "price": "2121",
@@ -747,6 +778,7 @@
         "entityMap": {}
       },
       "postedDate": 1610222795569,
+      "isPremium": false,
       "imageUrl": "images/item.jpg",
       "rating": 0,
       "id": 17
@@ -755,6 +787,10 @@
       "category": [
         2,
         4
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "asd",
@@ -775,6 +811,7 @@
       },
       "postedDate": 1610222805372,
       "imageUrl": "images/item.jpg",
+      "isPremium": false,
       "rating": 0,
       "id": 18
     },
@@ -782,6 +819,10 @@
       "category": [
         2,
         4
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "asd",
@@ -802,6 +843,7 @@
       },
       "postedDate": 1610222807542,
       "imageUrl": "images/item.jpg",
+      "isPremium": false,
       "rating": 0,
       "id": 19
     },
@@ -809,6 +851,10 @@
       "category": [
         2,
         4
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "asd",
@@ -829,6 +875,7 @@
       },
       "postedDate": 1610222902772,
       "imageUrl": "images/item.jpg",
+      "isPremium": false,
       "rating": 0,
       "id": 20
     },
@@ -836,6 +883,10 @@
       "category": [
         1,
         4
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "asdacxasc",
@@ -855,6 +906,7 @@
         "entityMap": {}
       },
       "postedDate": 1610222980808,
+      "isPremium": false,
       "imageUrl": "images/item.jpg",
       "rating": 0,
       "id": 21
@@ -863,6 +915,10 @@
       "category": [
         3,
         6
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "ALL_ADS",
       "title": "ad1 ",
@@ -894,6 +950,10 @@
         2,
         6
       ],
+      "city": [
+        2,
+        3
+      ],
       "type": "PROFESSIONAL",
       "title": "asdasdad",
       "price": "222",
@@ -923,6 +983,10 @@
         7,
         8
       ],
+      "city": [
+        2,
+        3
+      ],
       "type": "INDIVIDUAL",
       "title": "qwdqwd",
       "price": "1212",
@@ -950,6 +1014,10 @@
       "category": [
         2,
         5
+      ],
+      "city": [
+        2,
+        3
       ],
       "type": "PROFESSIONAL",
       "title": "32rfsfsdqwdsdc",
@@ -979,6 +1047,10 @@
         2,
         5
       ],
+      "city": [
+        2,
+        3
+      ],
       "type": "ALL_ADS",
       "title": "asdacsc",
       "price": "12",
@@ -1001,6 +1073,46 @@
       "rating": 0,
       "isPremium": true,
       "id": 26
+    },
+    {
+      "category": [
+        1,
+        4,
+        7
+      ],
+      "city": [
+        2,
+        4
+      ],
+      "type": "PROFESSIONAL",
+      "title": "test",
+      "price": "1312",
+      "tags": [
+        "sd",
+        "sdf",
+        "sd sd",
+        "sd fsd",
+        "sd"
+      ],
+      "description": {
+        "blocks": [
+          {
+            "key": "fdmum",
+            "text": "zcsd fsd fsdf sd f",
+            "type": "unstyled",
+            "depth": 0,
+            "inlineStyleRanges": [],
+            "entityRanges": [],
+            "data": {}
+          }
+        ],
+        "entityMap": {}
+      },
+      "postedDate": 1610386884975,
+      "imageUrl": "images/item.jpg",
+      "rating": 0,
+      "isPremium": true,
+      "id": 27
     }
   ]
 }
