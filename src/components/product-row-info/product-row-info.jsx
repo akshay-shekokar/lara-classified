@@ -2,13 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Icon } from "semantic-ui-react";
 import "./product-row-info.css";
+import { getPassedTime } from "../../utils";
 
-const ProductRowInfo = ({ postedDate, /* categoryIds, cityIds */ }) => {
+const ProductRowInfo = ({ postedDate /* categoryIds, cityIds */ }) => {
   return (
     <div>
       <span className="ak-ads-duration">
         <Icon name="time" />
-        {postedDate}
+        {getPassedTime(postedDate)}
       </span>
       <Icon name="file" />
       {/* {categoryIds.map((cat) => (
