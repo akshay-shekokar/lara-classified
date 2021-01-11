@@ -3,11 +3,15 @@ import PropTypes from "prop-types";
 import { Icon, Popup } from "semantic-ui-react";
 import { AkLink } from "../../ak-components";
 import "./product-details.css";
+import draftToHtml from "draftjs-to-html";
 
 const ProductDetails = ({ description }) => {
   return (
     <div>
-      <div className="ak-pd-description-text">{JSON.stringify(description)}</div>
+      <div
+        className="ak-pd-description-text"
+        dangerouslySetInnerHTML={{ __html: draftToHtml(description) }}
+      ></div>
       <div className="ak-pd-details-line-action">
         <AkLink color="#369" hover="#fa7722">
           <Popup
